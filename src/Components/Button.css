@@ -1,0 +1,16 @@
+button {
+  width: 30%;
+  outline: none;
+  border: none;
+  background-color: purple;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
+  background-color: rgba(128, 0, 128, 0.938);
+}
+
+.modal-btn{
+    margin-left: 12rem;
+}

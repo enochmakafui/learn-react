@@ -15,16 +15,12 @@ const App = () => {
       });
 
       return updatedEntry;
-
     });
   };
   return (
     <div>
       <Form newDataHandler={newDataHandler} />
-      { entryData.length > 0 && (
-      <NewEntry newData={entryData}  />
-      )
-      }
+      {entryData.length > 0 && <NewEntry newData={entryData} />}
     </div>
   );
 };

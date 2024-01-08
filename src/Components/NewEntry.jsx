@@ -2,15 +2,14 @@ import React from "react";
 import NewEntryItem from "./NewEntryItem";
 
 const NewEntry = (props) => {
-    const dataArray =props.newData;
+  const dataArray = props.newData;
 
   return (
-    <div className="New-Entry-Item">
+    <React.Fragment>
       {dataArray.map((data) => {
-        <NewEntryItem key={Math.random().toString()} data={data} />;
+        return <NewEntryItem key={Math.random().toString()} data={data} />;
       })}
-      {/* <p>{props.newData[0].name}</p> */}
-    </div>
+    </React.Fragment>
   );
 };
 
